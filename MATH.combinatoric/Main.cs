@@ -12,9 +12,11 @@ namespace Combinatoric
 
         static public void Main()
         {
+            Combinations.Compute();
             Accommodation.Compute();
             int result = Factorial.Compute(f);
-            Console.WriteLine($"Значение факториала {result} ");
+            Console.WriteLine("##########################################");
+            Console.WriteLine($"Значение факториала {f}! = {result}");
         }
 
     }

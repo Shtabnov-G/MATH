@@ -11,13 +11,16 @@ namespace Combinatoric
         public static int Compute()
         {
             //считаем Размещения 
-
-            Console.Write ("Введите нижний прказатель n =  ");
+            Console.WriteLine("Программа считает количество Размещений А");
+            Console.WriteLine("##########################################");
+            Console.WriteLine();
+            Console.Write ("Введите нижний показатель n =  ");
             int An = Convert.ToInt32(Console.ReadLine());
             Console.Write ("Введите верхний пoказатель m =  ");
             int Am = Convert.ToInt32(Console.ReadLine());
             int A = Factorial.Compute(An)/Factorial.Compute(An-Am);
             Console.WriteLine($"Количество размещений А = {A} ");
+            Console.WriteLine();
             return A;
         }
     }
